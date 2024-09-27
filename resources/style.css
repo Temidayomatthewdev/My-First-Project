@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 150vh;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background: url(../resources/images/background.jpg) no-repeat center/cover;
+
+}
+/* header start*/
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+
+}
+/* icon start */
+.icon{
+    padding: 10px;
+}
+.icon > a{
+    margin-left: 8px;
+    font-size: 20px;
+    color: white;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.icon i{
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.icon i:hover{
+    transform: rotatey(360deg);
+}
+/* icon end */
+.search{
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+/* Heading start */
+.header_txt{
+    padding: 5px;
+    margin-left: 8rem;
+}
+.header_txt > h1{
+    font-size: 3rem;
+    transition-property: transform;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+.header_txt > h1:hover{
+    transform: rotate(360deg);
+}
+/* heading end */
+.search input{
+    background:transparent;
+    font-size: 16px;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+}
+.search input::placeholder{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: -120px;
+}
+.search > i{
+    margin-left: 5px;
+    font-size:20px;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
+    background-color:grey;
+    width: 70%;
+    height: 1px;
+}
+/* done with the header */
+/* nav bar starting */
+.nav_bar{
+    padding: 30px 20px ;
+}
+.nav_bar > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav_bar ul > li{
+    padding: 0px 25px;
+}
+.nav_bar ul > li >a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    padding: 4px;
+    position: relative;
+}
+.nav_bar ul > li >a::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+.nav_bar ul > li >a:hover::after{
+    width: 100%;
+    background: white;
+}
+.mother{
+    max-width: 100%;
+    height: 100vh;
+    padding:0px 35px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.mother_child:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background:url(../resources/images/rock.jpg) no-repeat center/cover;
+}
+.mother_child:nth-child(2){
+    background:url(../resources/images/watch.jpg) no-repeat center/cover;
+    grid-column: 2/3;
+}
+
+.mother_child:nth-child(3){
+     background:url(../resources/images/dark_car.jpg) no-repeat center/cover;
+}
+.mother_child:nth-child(1){
+    display: flex;
+    align-items: flex-end;
+}
+.mother_Grandchild:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    padding: 20px 0;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.mother_Grandchild:nth-child(1) > .music{
+    background-color:steelblue;
+    color: white;
+    padding:5px;
+    width:80px ;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.mother_Grandchild:nth-child(1) > .txt > h1{
+    color: white;
+    border: 1px red;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-shadow: 3px 4px 7px black;
+    margin-bottom: 7px
+}
+.mother_Grandchild:nth-child(1) .footer{
+    display: flex;
+    align-items: center;
+}
+.mother_child:nth-child(1) .footer > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.mother_child:nth-child(1) .footer_txt{
+    background-color: color;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.mother_child:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+}
+.mother_Grandchild-i{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.mother_Grandchild-i .management{
+    background-color:green;
+    color: white;
+    padding:5px;
+    width:150px ;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.mother_Grandchild-i > .txt > h1{
+    color: white;
+    border: 1px red;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-shadow: 3px 4px 7px black;
+    margin-bottom: 7px;
+}
+.mother_Grandchild-i .footer{
+    display: flex;
+    align-items: center;
+}
+.mother_Grandchild-i .footer > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.mother_Grandchild-i .footer_txt{
+    background-color: color;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.mother_child:nth-child(3){
+    display: flex;
+    align-items: flex-end;
+}
+.mother_Grandchild-ii{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.mother_Grandchild-ii .management{
+    background-color:green;
+    color: white;
+    padding:5px;
+    width:100px ;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.mother_Grandchild-ii > .txt > h1{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-shadow: 3px 4px 7px black;
+    margin-bottom: 7px;
+}
+.mother_Grandchild-ii .footer{
+    display: flex;
+    align-items: center;
+}
+.mother_Grandchild-ii .footer > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.mother_Grandchild-ii .footer_txt{
+    background-color: color;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+}
