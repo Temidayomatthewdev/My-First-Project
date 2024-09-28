@@ -291,3 +291,116 @@ body{
     font-weight: 500;
     margin-left: 10px;
 }
+.sec-mother{
+    background-color: rgb(243, 246, 247);
+    padding: 4rem;
+    width: 100%;
+    height: 500vh;
+    display: flex;
+    justify-content: center;
+}
+.sec-mother > .housing{
+    width: 85%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2rem;
+}
+.sec-mother > .housing > .siblings{
+    background-color: white;
+    box-shadow: 0.2px 0.2px 4px black;
+    border: none;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.sec-mother > .housing > .siblings:nth-child(1){
+    grid-row: 1/ 4;
+}
+.sec-mother > .housing > .siblings:nth-child(2){
+    grid-row: 1/3;
+}
+.sec-mother > .housing > .siblings:nth-child(3){
+    grid-row: 1/4 ;
+}
+.sec-mother > .housing > .siblings:nth-child(4){
+    grid-row: 4/7;
+}
+.sec-mother > .housing > .siblings:nth-child(5){
+    grid-row: 3/6;
+}
+.sec-mother > .housing > .siblings:nth-child(6){
+    grid-row: 4/7;
+}
+.sec-mother > .housing > .siblings:nth-child(7){
+    grid-row: 7/9;
+}
+.sec-mother > .housing > .siblings:nth-child(8){
+    grid-row: 6/9;
+}
+.sec-mother > .housing > .siblings:nth-child(9){
+    grid-row: 7/10;
+}
+.sec-mother > .housing > .siblings:nth-child(10){
+    grid-row: 9/12;
+}
+.sec-mother > .housing > .siblings:nth-child(11){
+    grid-row: 9/11;
+}
+.sec-mother > .housing > .siblings:nth-child(12){
+    grid-row: 10/12;
+}
+.sec-mother > .housing > .siblings .img{
+    width: 100%;
+    height: 100%;
+}
+.sec-mother > .housing > .siblings .img > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.sec-mother > .housing > .siblings > .nested-mother{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 fr);
+    padding: 20px;
+}
+.sec-mother > .housing > .siblings > .nested-mother span{
+    color: grey;
+    font-size: 14px;
+}
+.sec-mother > .housing > .siblings > .nested-mother > .txt-heading{
+    /* width: 200px; */
+}
+.sec-mother > .housing > .siblings > .nested-mother > footer{
+    color:blue;
+    font-weight: bold;
+}
+
+.sec-mother > .housing > .siblings:nth-child(2),
+.sec-mother > .housing > .siblings:nth-child(7),
+.sec-mother > .housing > .siblings:nth-child(11),
+.sec-mother > .housing > .siblings:nth-child(12){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    overflow: hidden;
+}
+blockquote{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+blockquote > p{
+    font-size:14px;
+    color: grey;
+}
